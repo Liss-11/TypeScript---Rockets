@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  size: 16em;
+  color: whitesmoke;
+  text-shadow: yellow;
+}
+.galaxia {
+  background-image: url("imagenes/galaxia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 300vh;
+}
+.hide {
+  display: none;
+}
+
+.anim {
+  z-index: 0;
+  position: relative;
+  left: 0px;
+  animation-duration: 20s;
+  animation-name: slide;
+  transition-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-image: url("imagenes/fondo-estrellas1.jpg");
+  background-size: cover;
+}
+@keyframes slide {
+  0% {
+    margin-right: 0%;
+    width: 200%;
+  }
+  100% {
+    transform: translate(-50%);
+    width: 200%;
+  }
+}
+.containerCohetes {
+  max-height: 50vh;
+}
+
+.cohetes {
+  background-image: url("imagenes/fondo-estrellas1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.cohete1 img,
+.cohete2 img {
+  min-width: 8vw;
+  max-width: 11vw;
+  min-height: 26vh;
+  max-height: 39vh;
+  margin-left: 4vw;
+
+  transform: rotate(90deg);
+}
+.cohete2 img {
+  min-width: 6vw;
+  max-width: 9vw;
+  min-height: 24vh;
+  max-height: 27vh;
+  margin-left: 4vw;
+}
+
+.cohete1,
+.cohete2 {
+  z-index: 5;
+  margin: 0;
+  margin-top: 2vh;
+}
+
+.boton1,
+.boton2 {
+  margin: 4rem;
+  margin-left: 20vw;
+}
+
+.hide {
+  display: none;
+}
